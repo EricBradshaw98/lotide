@@ -1,14 +1,10 @@
 const countLetters = function(sentence) {
   const letterCount = {};
 
-  // Remove non-alphabetic characters and convert to lowercase
-  const cleanSentence = sentence.replace(/[^a-zA-Z]/g, '').toLowerCase();
 
 
- 
-
-  // Count the occurrence of each letter
-  for (const char of cleanSentence) {
+  // Count letters
+  for (const char of sentence) {
     if (letterCount[char]) {
       letterCount[char]++;
     } else {
@@ -32,8 +28,8 @@ const assertEqual = function(actual, expected) {
 
 };
 
-// Example usage
+// Example
 const result = countLetters('LHL');
-const expectedOutput = { l: 2, h: 1 };
+const expectedOutput = { L: 2, H: 1 };
 
 assertEqual(JSON.stringify(result), JSON.stringify(expectedOutput));
