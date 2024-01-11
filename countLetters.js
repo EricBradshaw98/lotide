@@ -1,5 +1,5 @@
-const countLetters = function(sentence){
-const letterCount = {};
+const countLetters = function(sentence) {
+  const letterCount = {};
 
   // Remove non-alphabetic characters and convert to lowercase
   const cleanSentence = sentence.replace(/[^a-zA-Z]/g, '').toLowerCase();
