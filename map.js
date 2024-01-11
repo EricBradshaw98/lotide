@@ -23,13 +23,32 @@ const results1 = map(words, word => word[0]);
 console.log(results1);
 
 
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
+const eqArrays = function(actual, expected) {
+
+  //original was checking for specific object, now check if length is equal
+  if (actual.length !== expected.length) {
+    
+    return false;
+  }
+// loop each item in the array, check if not equal
+  for (let i = 0; i < actual.length; i++) {
+    if (actual[i] !== expected[i]) {
+      
+      return false;
+    }
+  }
+//otherwise pass if actual is equal to expected
+  
+  return true
+};
+const assertArraysEqual = function(arr1, arr2) {
+  const result = eqArrays(arr1, arr2);
+  if (result) {
+    console.log(`✅✅✅ Assertion Passed: [${arr1}] === [${arr2}]`);
   } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
+    console.log(`🛑🛑🛑 Assertion Failed: [${arr1}] !== [${arr2}]`);
   }
 };
 
 
-assertEqual(results1, ['g', 'c', 't', 'm', 't']);
+assertArraysEqual(results1, ['g', 'c', 't', 'm', 't']);
