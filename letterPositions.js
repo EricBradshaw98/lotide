@@ -1,3 +1,5 @@
+
+// eqArrays
 const eqArrays = function(actual, expected) {
   if (actual.length !== expected.length) {
     return false;
@@ -11,7 +13,7 @@ const eqArrays = function(actual, expected) {
 
   return true;
 };
-
+//  letterpositions function 
 const letterPositions = function(sentence) {
   const results = {};
 
@@ -30,6 +32,7 @@ const letterPositions = function(sentence) {
   return results;
 };
 
+// assert equal to test if it matches
 const assertArraysEqual = function(arr1, arr2) {
   const result = eqArrays(arr1, arr2);
   if (result) {
@@ -39,7 +42,7 @@ const assertArraysEqual = function(arr1, arr2) {
   }
 };
 
-// Test cases for letterPositions with the test string "hello"
+// Test cases for string hello
 const results = letterPositions("hello");
 
 assertArraysEqual(results['h'], [0]);
