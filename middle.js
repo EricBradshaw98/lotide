@@ -1,4 +1,4 @@
-// Function to find the middle elements of an array
+// Find the middle elements of an array
 function middle(array) {
   const length = array.length;
 
@@ -7,14 +7,14 @@ function middle(array) {
   }
 
   if (length % 2 === 1) {
-    // For arrays with odd number of elements, return a single middle element
-    const middleIndex = Math.floor(length / 2);
-    return [array[middleIndex]];
+    // odd number of elements,  single middle element
+    const middleI = Math.floor(length / 2);
+    return [array[middleI]];
   } else {
-    // For arrays with even number of elements, return two middle elements
-    const middleIndex1 = length / 2 - 1;
-    const middleIndex2 = length / 2;
-    return [array[middleIndex1], array[middleIndex2]];
+    // even number of elements,  two middle elements
+    const middleI1 = length / 2 - 1;
+    const middleI2 = length / 2;
+    return [array[middleI1], array[middleI2]];
   }
 }
 
@@ -43,8 +43,8 @@ const assertArraysEqual = function(arr1, arr2) {
   }
 };
 
-// Test cases including the middle function
-assertArraysEqual(middle([1, 2, 3]), [2]); // Odd number of elements
-assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]); // Even number of elements
-assertArraysEqual(middle(["a", "b", "c"]), ["b"]); // Odd number of elements
-assertArraysEqual(middle(["a", "b", "c", "d"]), ["b", "c"]); // Even number of elements
+// Test cases 
+assertArraysEqual(middle([1, 2, 3]), [2]); // Odd 
+assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]); // Even 
+assertArraysEqual(middle(["a", "b", "c"]), ["b"]); // Odd 
+assertArraysEqual(middle(["a", "b", "c", "d"]), ["b", "c"]); // Even 
