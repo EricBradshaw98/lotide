@@ -17,8 +17,8 @@ const eqArrays = function(actual, expected) {
   return true
 };
 
-// check whether equal and print message
-const assertEqual = require('./assertEqual');
+
+
 
 
 module.exports = eqArrays;
