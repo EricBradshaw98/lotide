@@ -17,7 +17,7 @@ const map = function(array, callback) {
   
   return results;
 
-}
+};
 
 const results1 = map(words, word => word[0]);
 console.log(results1);
@@ -30,16 +30,16 @@ const eqArrays = function(actual, expected) {
     
     return false;
   }
-// loop each item in the array, check if not equal
+  // loop each item in the array, check if not equal
   for (let i = 0; i < actual.length; i++) {
     if (actual[i] !== expected[i]) {
       
       return false;
     }
   }
-//otherwise pass if actual is equal to expected
+  //otherwise pass if actual is equal to expected
   
-  return true
+  return true;
 };
 const assertArraysEqual = function(arr1, arr2) {
   const result = eqArrays(arr1, arr2);
