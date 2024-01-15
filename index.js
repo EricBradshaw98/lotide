@@ -23,15 +23,15 @@ module.exports = {
   middle: middle,
   assertArraysEqual: assertArraysEqual,
   assertEqual: assertEqual,
-  eqArrays: eqArrays
-  assertObjectsEqual //
-  countLetters //
-  countOnly //
-  eqObjects
-  findKey
-  findKeyByValue
-  flatten
-  letterPositions
-  takeUntil
-  without
+  eqArrays: eqArrays,
+  assertObjectsEqual, //
+  countLetters, //
+  countOnly, //
+  eqObjects,
+  findKey,
+  findKeyByValue,
+  flatten,
+  letterPositions,
+  takeUntil,
+  without,
 };
