@@ -27,9 +27,5 @@ const assertEqual = function(actual, expected) {
 
 
 };
-
+module.exports = countLetters;
 // Example
-const result = countLetters('LHL');
-const expectedOutput = { L: 2, H: 1 };
-
-assertEqual(JSON.stringify(result), JSON.stringify(expectedOutput));

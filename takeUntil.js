@@ -50,6 +50,6 @@ const assertArraysEqual = function(arr1, arr2) {
     console.log(`🛑🛑🛑 Assertion Failed: [${arr1}] !== [${arr2}]`);
   }
 };
-
+module.exports = takeUntil;
 assertArraysEqual(results1, [1, 2, 5, 7, 2]);
 assertArraysEqual(results2, ["I've", "been", "to", "Hollywood"]);

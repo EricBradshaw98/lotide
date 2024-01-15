@@ -36,12 +36,7 @@ const assertObjectsEqual = function(actual, expected) {
     console.log(`🛑🛑🛑 Assertion Failed: [${inspect(actual)}] !== [${inspect(expected)}]`);
   }
 };
-//arrays
-assertObjectsEqual([1, 2, 3], [1, 2, 3]);
-assertObjectsEqual([1, 2, 3], [3, 2, 1]);
 
-// cases with objects
-assertObjectsEqual({ a: 1, b: 2, c: 3 }, { a: 1, b: 2, c: 3 }); // should pass: objects are equal
+module.exports = assertObjectsEqual;
 
-assertObjectsEqual({ x: 1, y: 2 }, { x: 1, y: 2, z: 3 });
 

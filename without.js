@@ -33,7 +33,7 @@ const without = function(source, itemsToRemove) {
   }
   return result;
 };
-
+module.exports = without;
 // Test cases
 //test without 2 and 3
 assertArraysEqual(without([1, 2, 3], [1]), [2, 3]);
