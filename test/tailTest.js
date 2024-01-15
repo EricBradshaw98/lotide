@@ -5,8 +5,9 @@ const assertEqual = require('../assertEqual');
 
 const words = ["Yo Yo", "Lighthouse", "Labs"];
 tail(words);
-assertEqual(words.length, 3);
 
-console.log(tail(["a", "b", "c"]));
-console.log(tail([]));
-console.log(tail([42]));
+
+assertEqual(tail(words)[0], "Lighthouse");
+assertEqual(tail(words).length, words.length - 1);
+assertEqual(tail(["test"]).length, 0);
+assertEqual(tail([]).length, 0);
