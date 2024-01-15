@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@hbghost/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "description": "recreation of lotide library",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/EricBradshaw98/lotide.git"
   },
-  "author": "",
+  "author": "Eric Bradshaw",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/EricBradshaw98/lotide/issues"
