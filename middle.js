@@ -20,11 +20,7 @@ const middle = function(array) {
 
 module.exports = middle;
 
-// Function to check if two arrays are equal
-const eqArrays = require('./eqArrays');
 
 
-// Function to assert whether two arrays are equal and print a message
-const assertArraysEqual = require('./assertArraysEqual.js');
 
 
